@@ -6,24 +6,24 @@ import { SectionDivider } from "~/app/_components/SectionDivider";
 export const metadata: Metadata = {
   title: "Our Story | Estuary Mineral Water",
   description:
-    "Discover the origin of Estuary Mineral Water — naturally sourced from a protected aquifer deep in Australia's Snowy Mountains.",
+    "Discover the origin of Estuary Mineral Water — naturally sourced from a pristine aquifer in Australia's Snowy Mountains. Clean. Balanced. Australian.",
 };
 
 const values = [
   {
     title: "Purity",
     description:
-      "Our water is drawn from a single, protected source — an ancient aquifer untouched by surface contaminants. Every bottle reflects the pristine environment from which it originates.",
+      "Sourced from a pristine aquifer in the Snowy Mountains, our water is naturally filtered over time through some of Australia's oldest geological formations. Every bottle reflects the clarity and balance of its origin — untouched and uncompromised.",
   },
   {
     title: "Sustainability",
     description:
-      "Glass-bottled by design, not by trend. We believe in packaging that honours the quality of what's inside. Our commitment to glass eliminates single-use plastic from the equation entirely.",
+      "Bottled in glass by design, not by trend. Glass is inert, preserving the integrity of the water while eliminating the microplastics that leach from conventional plastic packaging. It is fully recyclable and aligned with a lower environmental footprint.",
   },
   {
     title: "Australian Heritage",
     description:
-      "The Snowy Mountains are among Australia's most revered landscapes. Estuary carries the character of this remarkable region — its clarity, its resilience, its quiet grandeur.",
+      "Australia is home to some of the world's oldest landscapes and most mineral-rich environments. Estuary carries the character of the Snowy Mountains — its clarity, its resilience, its quiet grandeur — in every bottle.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function OurStoryPage() {
             OUR STORY
           </p>
           <h1 className="mt-3 font-serif text-4xl font-medium text-white sm:text-5xl lg:text-6xl">
-            From Mountain to Glass
+            Clean. Balanced. Australian.
           </h1>
         </div>
       </section>
@@ -59,40 +59,41 @@ export default function OurStoryPage() {
             <div className="max-w-xl">
               <FadeIn>
                 <h2 className="font-serif text-3xl font-medium leading-tight text-primary lg:text-4xl">
-                  A Source Millions
+                  A Water Australia
                   <br />
-                  of Years in the Making
+                  Has Been Missing
                 </h2>
               </FadeIn>
 
               <FadeIn delay={100}>
                 <p className="mt-8 text-base leading-relaxed text-muted">
-                  Beneath the Snowy Mountains of New South Wales lies a network
-                  of ancient aquifers, formed over millennia as snowmelt and
-                  rainfall percolated through layers of granite, basalt, and
-                  mineral-bearing sediment. This slow, natural filtration
-                  process — untouched by human intervention — produces water of
-                  remarkable clarity and composition.
+                  Estuary began with a simple observation. Australia, despite its
+                  natural richness, lacked a truly recognised premium mineral
+                  water brand. Surrounded by some of the world&apos;s oldest
+                  landscapes and most mineral-rich environments, it felt natural
+                  that Australia should produce water of exceptional quality. Yet
+                  finding a refined, locally sourced mineral water that matched
+                  global standards in both taste and presentation proved
+                  surprisingly difficult.
                 </p>
               </FadeIn>
 
               <FadeIn delay={200}>
                 <p className="mt-6 text-base leading-relaxed text-muted">
-                  Estuary Mineral Water is drawn directly from one of these
-                  protected subterranean sources. The water emerges naturally
-                  alkaline, with a balanced mineral profile that includes
-                  significant levels of magnesium and potassium — minerals
-                  essential for hydration, recovery, and everyday vitality.
+                  Estuary was created to change that. Sourced from a pristine
+                  aquifer in the Snowy Mountains, our water reflects the purity
+                  and balance of its origin. Naturally filtered over time, it
+                  develops a mineral composition that is both structured and
+                  smooth — offering a clean, refined profile suited to both
+                  everyday hydration and premium hospitality settings.
                 </p>
               </FadeIn>
 
               <FadeIn delay={300}>
                 <p className="mt-6 text-base leading-relaxed text-muted">
-                  We bottle at the source in premium glass, ensuring that
-                  nothing is added and nothing is lost between the aquifer and
-                  your table. The result is water that tastes clean, smooth, and
-                  distinctly pure — a reflection of the landscape from which it
-                  comes.
+                  From the beginning, the intention was to create more than just
+                  water. Estuary is designed as a considered product — one that
+                  brings together quality, simplicity, and presentation.
                 </p>
               </FadeIn>
             </div>
@@ -110,6 +111,100 @@ export default function OurStoryPage() {
               </div>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* Health & Sustainability */}
+      <section className="bg-surface py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+            {/* Glass & Sustainability */}
+            <FadeIn>
+              <div>
+                <p className="text-xs font-medium tracking-[0.3em] text-accent">
+                  WHY GLASS MATTERS
+                </p>
+                <h2 className="mt-4 font-serif text-3xl font-medium text-primary lg:text-4xl">
+                  Purity You Can Trust
+                </h2>
+                <p className="mt-6 text-base leading-relaxed text-muted">
+                  Bottled in glass, Estuary preserves the integrity of the water
+                  while avoiding the material interactions associated with
+                  plastic. Studies have shown that plastic bottles can leach
+                  microplastics into the water they hold — particles so small
+                  they are ingested without notice. Glass is inert: it does not
+                  leach, does not absorb, and does not alter the composition of
+                  what it contains.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted">
+                  Beyond purity, glass is infinitely recyclable without loss of
+                  quality. Choosing glass is not just a decision about taste — it
+                  is a commitment to a cleaner product and a more sustainable
+                  approach to packaging.
+                </p>
+              </div>
+            </FadeIn>
+
+            {/* Mineral Water vs Spring Water */}
+            <FadeIn delay={150}>
+              <div>
+                <p className="text-xs font-medium tracking-[0.3em] text-accent">
+                  BEYOND SPRING WATER
+                </p>
+                <h2 className="mt-4 font-serif text-3xl font-medium text-primary lg:text-4xl">
+                  What Sets Mineral Water Apart
+                </h2>
+                <p className="mt-6 text-base leading-relaxed text-muted">
+                  Unlike spring water, which simply emerges from the ground and
+                  may contain minimal mineral content, mineral water like Estuary
+                  develops its composition over centuries of natural filtration
+                  through deep geological formations. The result is a
+                  consistently balanced mineral profile — rich in magnesium,
+                  calcium, potassium, and bicarbonate — that supports hydration
+                  at a functional level.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted">
+                  Naturally rich in electrolytes, Estuary supports hydration and
+                  recovery without additives or sugars. It is a clean, balanced
+                  alternative designed for athletes and individuals who value
+                  both performance and refinement.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Performance & Lifestyle */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="mx-auto max-w-3xl px-6 text-center lg:px-12">
+          <FadeIn>
+            <SectionDivider />
+          </FadeIn>
+          <FadeIn delay={100}>
+            <h2 className="mt-12 font-serif text-3xl font-medium text-primary lg:text-4xl">
+              Performance Meets Lifestyle
+            </h2>
+          </FadeIn>
+          <FadeIn delay={200}>
+            <p className="mt-6 text-base leading-relaxed text-muted">
+              A core part of Estuary&apos;s philosophy is rooted in performance
+              and lifestyle. In sports such as tennis, skiing, golf, sailing,
+              and horse racing — where precision, endurance, and environment
+              matter — hydration plays a quiet but essential role. Whether
+              courtside, on the slopes, on the course, or by the water, Estuary
+              is designed to complement environments where quality is expected
+              and attention to detail matters.
+            </p>
+          </FadeIn>
+          <FadeIn delay={300}>
+            <p className="mt-6 text-base leading-relaxed text-muted">
+              Ultimately, Estuary represents a shift in how water is
+              perceived — not as a commodity, but as part of a broader
+              lifestyle. A product that fits seamlessly between performance and
+              leisure, function and design.
+            </p>
+          </FadeIn>
         </div>
       </section>
 

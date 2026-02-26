@@ -21,8 +21,8 @@ const segments = [
       "Naturally alkaline — a conversation starter with health-conscious guests",
       "Australian-sourced story that resonates with local-first values",
     ],
-    image: "/images/beach_table_1.jpg",
-    imageAlt: "Beachside cafe setting",
+    image: "/images/sydney_cafe_1.jpeg",
+    imageAlt: "Upscale Sydney restaurant with Harbour Bridge view",
   },
   {
     title: "Luxury Hotels",
@@ -34,8 +34,8 @@ const segments = [
       "Sustainable glass packaging aligned with ESG commitments",
       "Consistent quality for high-volume hospitality operations",
     ],
-    image: "/images/yacht_1.jpg",
-    imageAlt: "Luxury dining setting with ocean view",
+    image: "/images/sydney_hotel_1.jpeg",
+    imageAlt: "Luxury hotel room with panoramic Sydney Harbour view",
   },
   {
     title: "Fine Dining",
@@ -58,8 +58,8 @@ export default function HospitalityPage() {
       {/* Hero Banner */}
       <section className="relative flex h-[60vh] min-h-[400px] items-end overflow-hidden">
         <Image
-          src="/images/beach_table_2.jpg"
-          alt="Elegant beachside restaurant setting"
+          src="/images/sydney_cafe_1.jpeg"
+          alt="Upscale Sydney restaurant with harbour views"
           fill
           className="object-cover object-center"
           priority

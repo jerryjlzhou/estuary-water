@@ -86,24 +86,24 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:hello@estuarywater.com.au"
+                  href="mailto:estuarymineralwater@gmail.com"
                   className="transition-colors duration-200 hover:text-white"
                 >
-                  hello@estuarywater.com.au
+                  estuarymineralwater@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+61000000000"
+                  href="tel:+61428218855"
                   className="transition-colors duration-200 hover:text-white"
                 >
-                  +61 (0) 000 000 000
+                  0428 218 855
                 </a>
               </li>
               <li className="leading-relaxed">
-                Snowy Mountains,
+                96 Great Western Highway,
                 <br />
-                New South Wales, Australia
+                Blaxland, NSW, Australia
               </li>
             </ul>
           </div>

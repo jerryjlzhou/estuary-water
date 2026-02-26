@@ -14,22 +14,22 @@ const attributes = [
   {
     title: "Naturally Alkaline",
     description:
-      "With a pH of 7.8–8.2, Estuary's alkalinity is the result of natural mineral contact — not artificial enhancement. The water's gentle alkalinity supports balanced hydration without compromise.",
+      "With a neutral-to-slightly-alkaline pH of 7.1, Estuary's alkalinity is the result of natural mineral contact — not artificial enhancement. This contributes to its clean, smooth taste profile.",
   },
   {
     title: "Rich in Minerals",
     description:
-      "Magnesium, potassium, and calcium are absorbed naturally as the water passes through ancient granite formations. These essential minerals contribute to recovery, vitality, and everyday wellbeing.",
+      "Magnesium, potassium, calcium, and bicarbonate are absorbed naturally as the water filters through ancient geological formations. These essential minerals contribute to recovery, vitality, and everyday wellbeing.",
   },
   {
     title: "Glass Bottled",
     description:
-      "Every bottle of Estuary is sealed in premium glass — inert, elegant, and entirely recyclable. Glass preserves the water's purity while making a statement of quality on any table.",
+      "Every bottle of Estuary is sealed in premium glass — inert, elegant, and entirely recyclable. Glass preserves the water's purity and eliminates the microplastics that leach from conventional plastic packaging.",
   },
   {
     title: "Australian Sourced",
     description:
-      "Drawn from a single protected aquifer in the Snowy Mountains of New South Wales. Our source is monitored and preserved to ensure consistent quality, bottle after bottle.",
+      "Drawn from a single pristine aquifer in the Snowy Mountains of New South Wales. Our source is monitored and preserved to ensure consistent quality, bottle after bottle.",
   },
   {
     title: "Naturally Filtered",
@@ -44,13 +44,41 @@ const attributes = [
 ];
 
 const mineralProfile = [
-  { mineral: "Magnesium (Mg)", value: "28 mg/L" },
-  { mineral: "Potassium (K)", value: "4.2 mg/L" },
-  { mineral: "Calcium (Ca)", value: "18 mg/L" },
-  { mineral: "Sodium (Na)", value: "12 mg/L" },
-  { mineral: "Bicarbonate (HCO₃)", value: "185 mg/L" },
-  { mineral: "pH Level", value: "7.8 – 8.2" },
-  { mineral: "Total Dissolved Solids", value: "260 mg/L" },
+  { mineral: "Magnesium (Mg)", value: "47 mg/L" },
+  { mineral: "Calcium (Ca)", value: "32 mg/L" },
+  { mineral: "Potassium (K)", value: "3.5 mg/L" },
+  { mineral: "Sodium (Na)", value: "73 mg/L" },
+  { mineral: "Bicarbonate (HCO₃)", value: "112 mg/L" },
+  { mineral: "Silica (SiO₂)", value: "10 mg/L" },
+  { mineral: "Chloride (Cl)", value: "156 mg/L" },
+  { mineral: "pH Level", value: "7.1" },
+];
+
+const healthBenefits = [
+  {
+    mineral: "Magnesium",
+    highlight: "47 mg/L",
+    benefits:
+      "Supports muscle function and recovery, helps reduce cramps and fatigue, and supports the nervous system. One of Estuary's strongest natural assets for active lifestyles.",
+  },
+  {
+    mineral: "Calcium",
+    highlight: "32 mg/L",
+    benefits:
+      "Essential for bone strength, teeth health, and muscle contraction. Contributes to functional hydration that goes beyond simple refreshment.",
+  },
+  {
+    mineral: "Bicarbonate",
+    highlight: "112 mg/L",
+    benefits:
+      "Helps buffer acidity in the body, supports digestion, and contributes to the smooth, clean taste that distinguishes Estuary from other waters.",
+  },
+  {
+    mineral: "Silica",
+    highlight: "10 mg/L",
+    benefits:
+      "Supports skin, hair, and nail health, as well as connective tissue integrity. A subtle but valuable component of Estuary's natural mineral profile.",
+  },
 ];
 
 export default function ProductPage() {
@@ -170,6 +198,52 @@ export default function ProductPage() {
               </table>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Health Benefits */}
+      <section className="bg-surface py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <FadeIn>
+            <SectionDivider />
+          </FadeIn>
+          <FadeIn delay={100}>
+            <div className="mt-12 text-center">
+              <p className="text-xs font-medium tracking-[0.3em] text-accent">
+                FUNCTIONAL HYDRATION
+              </p>
+              <h2 className="mt-4 font-serif text-3xl font-medium text-primary lg:text-4xl">
+                More Than Just Water
+              </h2>
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted">
+                Unlike standard spring water, Estuary&apos;s mineral composition
+                develops over centuries of natural filtration through deep
+                geological formations. The result is water that hydrates at a
+                functional level — naturally rich in electrolytes, without
+                additives or sugars.
+              </p>
+            </div>
+          </FadeIn>
+
+          <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-x-16 lg:gap-y-12">
+            {healthBenefits.map((benefit, i) => (
+              <FadeIn key={benefit.mineral} delay={i * 100}>
+                <div className="border-l-2 border-accent/30 pl-6">
+                  <div className="flex items-baseline gap-3">
+                    <h3 className="font-serif text-xl font-medium text-primary">
+                      {benefit.mineral}
+                    </h3>
+                    <span className="text-xs font-medium tracking-wide text-accent">
+                      {benefit.highlight}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {benefit.benefits}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 

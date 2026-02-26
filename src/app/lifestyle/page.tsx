@@ -55,8 +55,8 @@ export default function LifestylePage() {
       {/* Hero Banner */}
       <section className="relative flex h-[60vh] min-h-[400px] items-end overflow-hidden">
         <Image
-          src="/images/mountain_range_1.jpg"
-          alt="Epic mountain panorama"
+          src="/images/tennis_banner_1.webp"
+          alt="Tennis court at sunset with palm trees"
           fill
           className="object-cover object-center"
           priority
@@ -81,10 +81,11 @@ export default function LifestylePage() {
           </FadeIn>
           <FadeIn delay={100}>
             <p className="mt-12 text-lg leading-relaxed text-muted">
-              Estuary Mineral Water is at home in the world&apos;s most
-              distinguished sporting arenas and cultural events. We partner with
-              organisations and occasions where excellence is the standard —
-              not the aspiration.
+              In sports where precision, endurance, and environment matter,
+              hydration plays a quiet but essential role. Estuary Mineral Water
+              is at home in the world&apos;s most distinguished sporting arenas
+              and cultural events — wherever excellence is the standard, not the
+              aspiration.
             </p>
           </FadeIn>
         </div>
@@ -131,8 +132,8 @@ export default function LifestylePage() {
             <FadeIn>
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/yacht_1.jpg"
-                  alt="Luxury yacht dining"
+                  src="/images/sailing_1.jpg"
+                  alt="Sailboats racing past Sydney Opera House"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"
@@ -142,8 +143,8 @@ export default function LifestylePage() {
             <FadeIn delay={150}>
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/beach_table_1.jpg"
-                  alt="Beachside setting"
+                  src="/images/skiing_1.png"
+                  alt="Skier in deep powder with mountain backdrop"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"

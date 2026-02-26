@@ -23,8 +23,8 @@ export function LifestylePreview() {
           <FadeIn>
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/mountain_range_3.jpg"
-                alt="Mountain silhouettes at golden hour"
+                src="/images/tennis_banner_1.webp"
+                alt="Tennis court at sunset with palm trees"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -48,10 +48,10 @@ export function LifestylePreview() {
             </FadeIn>
             <FadeIn delay={200}>
               <p className="mt-6 max-w-lg text-base leading-relaxed text-muted">
-                Estuary Mineral Water is at home in the world&apos;s most
-                distinguished sporting arenas. From courtside at the Australian
-                Open to the members&apos; enclosure at Flemington — wherever
-                excellence is the standard, Estuary belongs.
+                In sports where precision, endurance, and environment matter,
+                hydration plays a quiet but essential role. From courtside at the
+                Australian Open to the members&apos; enclosure at Flemington —
+                wherever excellence is the standard, Estuary belongs.
               </p>
             </FadeIn>
 

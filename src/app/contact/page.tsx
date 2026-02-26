@@ -62,10 +62,10 @@ export default function ContactPage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:hello@estuarywater.com.au"
+                      href="mailto:estuarymineralwater@gmail.com"
                       className="mt-2 block text-sm text-primary transition-colors hover:text-accent"
                     >
-                      hello@estuarywater.com.au
+                      estuarymineralwater@gmail.com
                     </a>
                   </div>
                   <div>
@@ -73,10 +73,10 @@ export default function ContactPage() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+61000000000"
+                      href="tel:+61428218855"
                       className="mt-2 block text-sm text-primary transition-colors hover:text-accent"
                     >
-                      +61 (0) 000 000 000
+                      0428 218 855
                     </a>
                   </div>
                   <div>
@@ -84,9 +84,9 @@ export default function ContactPage() {
                       Location
                     </h3>
                     <p className="mt-2 text-sm text-muted">
-                      Snowy Mountains,
+                      96 Great Western Highway,
                       <br />
-                      New South Wales, Australia
+                      Blaxland, NSW, Australia
                     </p>
                   </div>
                 </div>

@@ -55,8 +55,8 @@ export function HospitalityPreview() {
           <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-5">
             <div className="relative aspect-[4/3] overflow-hidden sm:col-span-3">
               <Image
-                src="/images/yacht_1.jpg"
-                alt="Luxury yacht dining setting"
+                src="/images/sydney_cafe_1.jpeg"
+                alt="Upscale Sydney restaurant with Harbour Bridge view"
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 60vw"
@@ -64,8 +64,8 @@ export function HospitalityPreview() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden sm:col-span-2">
               <Image
-                src="/images/beach_table_2.jpg"
-                alt="Elegant beachside restaurant"
+                src="/images/sydney_hotel_1.jpeg"
+                alt="Luxury hotel room with panoramic Sydney Harbour view"
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 100vw, 40vw"
