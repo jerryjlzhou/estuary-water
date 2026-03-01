@@ -29,7 +29,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Estuary Mineral Water" }],
   creator: "Estuary Mineral Water",
   icons: [
-    { rel: "icon", url: "/favicon.ico" },
+    { rel: "icon", url: "/favicon.png", type: "image/png" },
+    { rel: "apple-touch-icon", url: "/apple-touch-icon.png" },
   ],
   openGraph: {
     type: "website",
