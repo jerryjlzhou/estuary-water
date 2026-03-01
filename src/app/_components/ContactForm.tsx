@@ -15,10 +15,47 @@ const businessTypes = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name") as string,
+      email: formData.get("email") as string,
+      business: formData.get("business") as string,
+      businessType: formData.get("businessType") as string,
+      message: formData.get("message") as string,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const result = (await res.json()) as { error?: string };
+        throw new Error(result.error ?? "Something went wrong.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Failed to send enquiry. Please try again.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -131,11 +168,16 @@ export function ContactForm() {
         />
       </div>
 
+      {error && (
+        <p className="text-sm text-red-600">{error}</p>
+      )}
+
       <button
         type="submit"
-        className="mt-4 w-full border border-primary bg-primary px-8 py-3.5 text-xs font-medium tracking-[0.2em] uppercase text-white transition-all duration-300 hover:bg-primary-light sm:w-auto"
+        disabled={loading}
+        className="mt-4 w-full border border-primary bg-primary px-8 py-3.5 text-xs font-medium tracking-[0.2em] uppercase text-white transition-all duration-300 hover:bg-primary-light disabled:opacity-50 sm:w-auto"
       >
-        Send Enquiry
+        {loading ? "Sending..." : "Send Enquiry"}
       </button>
     </form>
   );
