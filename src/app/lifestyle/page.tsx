@@ -143,8 +143,8 @@ export default function LifestylePage() {
             <FadeIn delay={150}>
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/skiing_1.png"
-                  alt="Skier in deep powder with mountain backdrop"
+                  src="/images/horse_racing.PNG"
+                  alt="Horse racing at the track"
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, 50vw"
