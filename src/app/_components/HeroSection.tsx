@@ -20,9 +20,14 @@ export function HeroSection() {
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         {/* Wordmark */}
         <div className="animate-fade-in">
-          <h1 className="font-serif text-6xl font-bold tracking-[0.05em] text-white sm:text-7xl lg:text-8xl xl:text-9xl">
-            ESTUARY
-          </h1>
+          <Image
+            src="/logos/estuary-wordmark-white.png"
+            alt="ESTUARY"
+            width={2435}
+            height={496}
+            className="h-auto w-[280px] sm:w-[360px] lg:w-[480px] xl:w-[580px]"
+            priority
+          />
           <p className="mt-1 text-xs font-light tracking-[0.45em] text-white/70 sm:text-sm sm:tracking-[0.5em]">
             — MINERAL WATER —
           </p>

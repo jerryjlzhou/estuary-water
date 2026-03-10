@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
@@ -22,10 +23,14 @@ export function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4">
-              <span className="font-serif text-2xl font-bold tracking-wide text-white">
-                ESTUARY
-              </span>
-              <p className="mt-0.5 text-[0.6rem] font-medium tracking-[0.35em] text-white/50">
+              <Image
+                src="/logos/estuary-wordmark-white.png"
+                alt="ESTUARY"
+                width={2435}
+                height={496}
+                className="h-auto w-[140px]"
+              />
+              <p className="mt-1 text-[0.6rem] font-medium tracking-[0.35em] text-white/50">
                 MINERAL WATER
               </p>
             </div>

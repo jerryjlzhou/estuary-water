@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -53,15 +54,16 @@ export function Navigation() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-12">
           {/* Wordmark */}
           <Link href="/" className="flex flex-col items-start">
+            <Image
+              src={isTransparent ? "/logos/estuary-wordmark-white.png" : "/logos/estuary-wordmark-navy.png"}
+              alt="ESTUARY"
+              width={2435}
+              height={496}
+              className="h-auto w-[120px] transition-opacity duration-300 sm:w-[140px]"
+              priority
+            />
             <span
-              className={`font-serif text-xl font-bold tracking-wide transition-colors duration-300 sm:text-2xl ${
-                isTransparent ? "text-white" : "text-primary"
-              }`}
-            >
-              ESTUARY
-            </span>
-            <span
-              className={`-mt-1 text-[0.55rem] font-medium tracking-[0.35em] transition-colors duration-300 sm:text-[0.6rem] ${
+              className={`-mt-0.5 text-[0.55rem] font-medium tracking-[0.35em] transition-colors duration-300 sm:text-[0.6rem] ${
                 isTransparent ? "text-white/70" : "text-muted"
               }`}
             >
